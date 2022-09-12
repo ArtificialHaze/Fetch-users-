@@ -1,0 +1,100 @@
+/* GLOBAL STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: lightslategrey;
+}
+
+input {
+  background-color: lightslategray;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  outline: 1px solid orangered;
+  transition: all 200ms ease-in-out;
+}
+
+input:focus {
+  outline: 1px solid lightgreen;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+/* MAIN STYLING */
+
+.card {
+  background-color: gray;
+  display: flex;
+  border-radius: 25px;
+  padding: 45px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.15),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  max-width: 800px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 10px solid gray;
+}
+
+.user__info {
+  margin-left: 2rem;
+  color: #eee;
+}
+
+.user__info h2 {
+  margin-top: 0;
+}
+
+.user__info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 425px;
+  list-style: none;
+}
+
+.user__info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user__info ul li strong {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.repository {
+  text-decoration: none;
+  background-color: lightslategrey;
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 3px;
+}
